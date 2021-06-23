@@ -1,0 +1,56 @@
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    font-family: 'Noto Sans JP', sans-serif
+    line-height: 1.6rem
+img
+    max-width: 100%
+    height: auto
+    display: block
+
+h1,
+h2,
+h3,
+p
+    margin: 0
+
+.container
+    width: 85%
+    max-width: 65em
+    margin: 0 auto
+
+.spacing>*+*
+    margin-top: var(--spacer, 2rem)
+
+.btn
+    background: var(--clr-accent, blue)
+    border-radius: .25em
+    color: var(--clr-text, #fff)
+    display: inline-block
+    font-weight: 700
+    font-size: 1.125rem
+    padding: .5em 1.25em
+    text-decoration: none
+    text-transform: uppercase
+    transition: 250ms all
+
+.btn:hover,
+.btn:focus
+    transform: scale(1.1)
+
+.primary-title
+    font-size: 4rem
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem)
+    line-height: 1
+    text-transform: uppercase
+
+.hero
+    color: white
+    text-align: center
+    padding: 15em 0 
+    background-image: radial-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .6)), url("../img/shoe-3.png")
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-position: center center
