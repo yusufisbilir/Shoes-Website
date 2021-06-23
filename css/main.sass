@@ -60,11 +60,11 @@ p
     color: white
     text-align: center
     padding: 15em 0 
-    background-image: url("../img/shoe-3.png")
+    background-image: radial-gradient(#00000070,#000),url("../img/shoe-3.png")
     background-attachment: fixed
     background-repeat: no-repeat
     background-position: center center
-    color: #000
+    color: #fff
 
 .section-title
     text-align: center
@@ -113,3 +113,32 @@ section
             display: block
             font-weight: 700
             font-size: 2.5rem
+
+.product
+    background: radial-gradient(var(--clr-inner, red),var(--clr-outer, yellow))
+    padding: 3em
+    border-radius: 1em
+    margin-bottom: 3em
+    text-align: center
+
+    &__title
+        font-size: 4rem
+        line-height: 1.1
+        color: #fff
+        text-shadow: 0 0 .2em rgba(#000, .2)
+
+.hero
+    --clr-accent: #faa700
+
+.shoe-red
+    --clr-inner: #faa700
+    --clr-outer: #e48d00
+    --clr-accent: #a1173c
+.shoe-white
+    --clr-inner: #fce4b3
+    --clr-outer: #eac886
+    --clr-accent: #2f4858
+.shoe-blue
+    --clr-inner: #6dd5ed
+    --clr-outer: #2193b0
+    --clr-accent: #008951
